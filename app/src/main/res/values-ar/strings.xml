@@ -1,18 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MyStory</string>
-    <string name="username">Username</string>
-    <string name="password">Password</string>
-    <string name="login">Login</string>
-    <string name="i_accept_terms">I accept terms and conditions</string>
-    <string name="forgot_password">Forgot password?</string>
-    <string name="home">Home</string>
-    <string name="logout">Logout</string>
-    <string name="open">Open</string>
-    <string name="close">Close</string>
-    <string name="enter_title">Enter Title here</string>
-    <string name="enter_sub_title">Enter Sub-Title here</string>
-    <string name="enter_description">Enter Description</string>
-    <string name="add_story">Add Story</string>
+    <string name="username">اسم المستخدم</string>
+
+    <string name="enter_description">أدخل الوصف</string>
+    <string name="password">كلمة المرور</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="i_accept_terms">أوافق على سروط الإستخدام</string>
+    <string name="forgot_password">هل نسيت كلمة المرور؟</string>
+    <string name="home">الرئيسية</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="open">فتح</string>
+    <string name="close">اغلاق</string>
+    <string name="enter_title">أدخل العنوان هنا</string>
+    <string name="enter_sub_title">أدخل العنوان الفرعي هنا</string>
+    <string name="add_story">أضف قصة</string>
 
     <string name="story1_title">My first story</string>
     <string name="story1_subtitle">This is subtitle</string>

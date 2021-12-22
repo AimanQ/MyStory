@@ -35,16 +35,17 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         setupDrawer()
-        try {
-            updateEmailInHeader(email!!)
-        }catch (e:NullPointerException){
+//        try {
+            updateEmailInHeader(email)
+//        }catch (e:NullPointerException){
 
-        }
+//        }
         drawerClicks()
         openAddStoryActivity()
         displayStories()
+
     }
-    private fun updateEmailInHeader(email:String){
+    private fun updateEmailInHeader(email:String?){
         val headerView = navigationView?.getHeaderView(0)
         val textViewEmail = headerView?.findViewById<TextView>(R.id.tvEmail)
         textViewEmail?.text = email
@@ -109,5 +110,16 @@ class MainActivity : AppCompatActivity() {
 
         val customAdapter = CustomAdapter(storiesArray,this)
         recyclerView?.adapter = customAdapter
+
+        if(intent.getStringExtra("title") != null){
+            val title = intent.getStringExtra("title")
+            val subTitle = intent.getStringExtra("subtitle")
+            val desc = intent.getStringExtra("desc")
+
+            val newStory = Story(title!!,subTitle!!,desc!!)
+
+            storiesArray.add(newStory)
+            customAdapter.notifyDataSetChanged()
+        }
     }
 }
